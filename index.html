@@ -3,114 +3,70 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Combo de Boas-Vindas para Anfitriões Airbnb</title>
+<meta name="description" content="Encante seus hóspedes, receba mais avaliações 5 estrelas e aumente suas reservas com o Combo de Boas-Vindas para Anfitriões Airbnb.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #ffffff;
-  color: #1a1a1a;
-  line-height: 1.7;
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Poppins',sans-serif;background:#fff;color:#1a1a1a;line-height:1.6}
+img{max-width:100%;display:block}
+.container{max-width:1100px;margin:auto;padding:20px}
+section{padding:60px 0}
+h1,h2,h3{text-align:center}
+h1{font-size:2.4rem}
+h2{font-size:2rem;margin-bottom:20px}
+p{text-align:center;margin-bottom:15px}
+.grid{display:grid;gap:30px}
+@media(min-width:768px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
+
+.btn{
+display:inline-block;
+background:#ffb703;
+color:#000;
+padding:16px 32px;
+font-weight:700;
+border-radius:8px;
+text-decoration:none;
+transition:.3s;
+}
+.btn:hover{background:#e6a700}
+
+.hero{background:#f7f7f7;padding:80px 20px}
+.hero img{margin:40px auto;border-radius:12px}
+
+.box{
+background:#f9f9f9;
+padding:30px;
+border-radius:12px;
+text-align:center;
 }
 
-section {
-  padding: 80px 20px;
-}
+.highlight{background:#fff3cd}
 
-.container {
-  max-width: 960px;
-  margin: auto;
+footer{
+background:#111;
+color:#fff;
+padding:40px 20px;
+font-size:14px;
+text-align:center;
 }
+footer a{color:#ffb703;text-decoration:none}
 
-/* HERO */
-.hero {
-  background: #f7f7f7;
-  text-align: center;
+.video{
+max-width:800px;
+margin:40px auto;
+border-radius:12px;
+overflow:hidden;
 }
+iframe{width:100%;height:450px;border:0}
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin: 30px 0 20px;
-}
-
-.hero h3 {
-  font-size: 1.2rem;
-  font-weight: normal;
-  max-width: 800px;
-  margin: 25px auto;
-}
-
-.hero img {
-  max-width: 100%;
-  margin: 25px 0;
-}
-
-/* CTA */
-.cta {
-  display: inline-block;
-  margin-top: 40px;
-  padding: 16px 40px;
-  background: #2bb673;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  font-size: 1.1rem;
-}
-
-/* SEÇÕES CLARAS */
-.highlight {
-  background: #f2f6fa;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 25px;
-  text-align: center;
-}
-
-p {
-  font-size: 1.05rem;
-}
-
-/* LISTAS */
-ul {
-  padding-left: 22px;
-  margin-top: 25px;
-}
-
-ul li {
-  margin-bottom: 12px;
-}
-
-/* OFERTA */
-.offer {
-  background: #1f2933;
-  color: #ffffff;
-  text-align: center;
-}
-
-.offer h2 {
-  color: #ffffff;
-}
-
-.price {
-  font-size: 2.8rem;
-  font-weight: bold;
-  margin: 30px 0;
-}
-
-.offer p {
-  color: #d1d5db;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 40px 20px;
-  color: #777;
+@media(max-width:600px){
+h1{font-size:1.9rem}
+h2{font-size:1.6rem}
+iframe{height:250px}
 }
 </style>
 </head>
@@ -120,115 +76,167 @@ footer {
 <!-- HERO -->
 <section class="hero">
   <div class="container">
+    <h1>Combo de Boas-Vindas para Anfitriões Airbnb</h1>
+    <p>Anfitriões comuns hospedam. Anfitriões de sucesso encantam.</p>
 
-    <!-- LOGO -->
-    <img src="imagens/logo.png" alt="Logo" style="width:150px;">
+    <img src="https://designturismo.com/wp-content/uploads/2023/09/combo-de-boas-vindas-anfitriao-airbnb1.png" alt="Combo de Boas-Vindas Airbnb">
 
-    <h3>
-      Anfitriões comuns apenas hospedam.  
-      Anfitriões de sucesso encantam — e colhem mais avaliações 5 estrelas,
-      elogios espontâneos e reservas recorrentes.
-    </h3>
-
-    <!-- IMAGEM PRINCIPAL DO PRODUTO -->
-    <img src="imagens/combo-principal.webp" alt="Combo de Boas-Vindas">
-
-    <h3>
-      Transforme a experiência do seu hóspede desde o primeiro contato  
-      e destaque sua hospedagem em meio à concorrência
-    </h3>
-
-    <p>
-      Conheça o <strong>Combo de Boas-Vindas</strong>, utilizado por mais de
-      <strong>1.400 anfitriões</strong> no Brasil e no exterior, desenvolvido
-      com base nas melhores práticas adotadas por anfitriões dos
-      Estados Unidos, Canadá e Europa.
-    </p>
-
-    <a href="#oferta" class="cta">Quero encantar meus hóspedes</a>
+    <p><a href="#comprar" class="btn">Quero Encantar Meus Hóspedes</a></p>
   </div>
 </section>
 
-<!-- HISTÓRIA / CONTEXTO -->
-<section>
-  <div class="container">
-    <p>
-      Se você deseja surpreender seus hóspedes logo na chegada,
-      oferecer uma recepção organizada, acolhedora e profissional,
-      e ainda aumentar suas chances de receber avaliações 5 estrelas,
-      o <strong>Combo de Boas-Vindas</strong> foi criado exatamente para você.
-    </p>
-  </div>
-</section>
-
-<!-- IMPORTÂNCIA -->
+<!-- COPY DE CONVERSÃO -->
 <section class="highlight">
   <div class="container">
-    <h2>Por que isso faz tanta diferença?</h2>
+    <h2>Por que a experiência do hóspede importa?</h2>
 
     <p>
-      Hoje, não basta apenas ter um imóvel bonito.
-      O que realmente gera reservas constantes, boas avaliações
-      e indicações é a experiência completa que o hóspede vive.
+      <strong>Anfitriã(o), transforme cada estadia em uma experiência memorável.</strong><br>
+      Receba mais avaliações 5 estrelas, aumente suas reservas e se destaque da concorrência — 
+      mesmo em regiões com muitos imóveis parecidos.
     </p>
 
     <p>
-      E tudo começa na forma como ele é recebido.
+      O <strong>Combo de Boas-Vindas</strong> já ajudou <strong>mais de 1.400 anfitriões</strong> no Brasil
+      e no exterior a elevar o nível da hospedagem, seguindo as melhores práticas utilizadas por
+      anfitriões de alto desempenho nos <strong>Estados Unidos, Canadá e Europa</strong>.
+    </p>
+
+    <p>
+      Se você quer encantar desde o primeiro contato, oferecer uma recepção profissional
+      e criar uma experiência que o hóspede realmente lembra — e recomenda —
+      <strong>o Combo de Boas-Vindas foi feito para você</strong>.
+    </p>
+
+    <p>
+      <strong>Hoje não basta ter um imóvel bonito.</strong><br>
+      O que garante avaliações positivas, reservas constantes e diferenciação real é a
+      <strong>experiência completa</strong> — e ela começa antes mesmo do hóspede chegar.
+    </p>
+
+    <p style="margin-top:30px;">
+      <a href="#comprar" class="btn">Quero Me Destacar da Concorrência</a>
     </p>
   </div>
 </section>
 
-<!-- DIFERENÇA -->
+
+<!-- VÍDEO -->
 <section>
   <div class="container">
-    <h2>A diferença entre hospedar e encantar</h2>
+    <h2>Veja como funciona</h2>
+    <p>Em poucos minutos você entende como transformar a experiência do seu hóspede.</p>
 
-    <p>
-      Hospedar é entregar uma chave.  
-      Encantar é criar uma experiência memorável.
-    </p>
-
-    <ul>
-      <li>Comunicação clara e profissional</li>
-      <li>Informações organizadas e fáceis de acessar</li>
-      <li>Sensação real de cuidado e atenção</li>
-      <li>Experiência positiva do check-in ao check-out</li>
-    </ul>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
 
-<!-- O QUE INCLUI -->
+<!-- O QUE É -->
+<section class="highlight">
+  <div class="container grid grid-2">
+    <div>
+      <h2>Guia de Boas-Vindas Digital Interativo</h2>
+      <p style="text-align:left">
+        Funciona como um aplicativo da sua hospedagem.  
+        O hóspede acessa tudo com um clique: regras, check-in, rotas, recomendações e muito mais.
+      </p>
+    </div>
+    <div class="box">
+      <ul style="text-align:left">
+        <li>📍 Rotas Google Maps</li>
+        <li>📋 Regras e instruções</li>
+        <li>🛎️ Check-in / Check-out</li>
+        <li>🍽️ Restaurantes e cafés</li>
+        <li>⭐ Experiência premium</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUSO -->
+<section>
+  <div class="container">
+    <h2>O que você vai receber</h2>
+
+    <div class="grid grid-3">
+      <div class="box">📘 Guia Digital Interativo</div>
+      <div class="box">📋 Checklists Profissionais</div>
+      <div class="box">📩 Mensagens Prontas</div>
+      <div class="box">📍 Recomendações Locais</div>
+      <div class="box">🎨 Templates Canva</div>
+      <div class="box">🛎️ Instruções Completas</div>
+    </div>
+  </div>
+</section>
+
+<!-- BÔNUS -->
 <section class="highlight">
   <div class="container">
-    <h2>O que você recebe no Combo de Boas-Vindas</h2>
+    <h2>Bônus Exclusivos</h2>
 
-    <ul>
-      <li>Guia de boas-vindas profissional e estruturado</li>
-      <li>Materiais totalmente editáveis</li>
-      <li>Comunicação padronizada com o hóspede</li>
-      <li>Mais organização e menos improviso</li>
-      <li>Experiência premium sem complicação</li>
-    </ul>
+    <div class="grid grid-3">
+      <div class="box"><strong>Bônus 1</strong><br>Templates extras</div>
+      <div class="box"><strong>Bônus 2</strong><br>Atualizações futuras</div>
+      <div class="box"><strong>Bônus 3</strong><br>Suporte inicial</div>
+    </div>
   </div>
 </section>
 
-<!-- OFERTA -->
-<section id="oferta" class="offer">
+<!-- DEPOIMENTOS -->
+<section>
   <div class="container">
-    <h2>Acesso completo ao Combo de Boas-Vindas</h2>
+    <h2>O que outros anfitriões dizem</h2>
 
-    <div class="price">R$ 220,00</div>
-
-    <p>
-      Pagamento único • Acesso imediato • Sem mensalidade
-    </p>
-
-    <a href="#" class="cta">Comprar agora</a>
+    <div class="grid grid-3">
+      <div class="box">⭐⭐⭐⭐⭐<br>“Minhas avaliações melhoraram muito.”</div>
+      <div class="box">⭐⭐⭐⭐⭐<br>“Os hóspedes chegam preparados.”</div>
+      <div class="box">⭐⭐⭐⭐⭐<br>“Muito mais profissional.”</div>
+    </div>
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="highlight">
+  <div class="container">
+    <h2>Perguntas Frequentes</h2>
+
+    <div class="box"><strong>Preciso pagar Canva?</strong><br>Não. A versão gratuita funciona.</div><br>
+    <div class="box"><strong>Recebo acesso imediato?</strong><br>Sim, após o pagamento.</div><br>
+    <div class="box"><strong>Posso compartilhar?</strong><br>Não, acesso individual.</div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section>
+  <div class="container">
+    <h2>Garantia</h2>
+    <p>Se não gostar, você pode solicitar reembolso conforme as regras da plataforma.</p>
+  </div>
+</section>
+
+<!-- CTA KIWIFY -->
+<section id="comprar" class="hero">
+  <div class="container">
+    <h2>Pronto para encantar seus hóspedes?</h2>
+    <p>Clique abaixo e tenha acesso imediato.</p>
+
+    <!-- LINK DA KIWIFY -->
+    <a href="https://kiwify.com.br/SEU_CHECKOUT" class="btn">Comprar Agora</a>
+  </div>
+</section>
+
+<!-- AVISO LEGAL -->
 <footer>
-  © 2025 • Combo de Boas-Vindas • Todos os direitos reservados
+  <p>
+    Este site não é afiliado ao Facebook ou Airbnb.<br>
+    Resultados variam conforme aplicação.
+  </p>
+  <p>
+    © 2026 — Todos os direitos reservados<br>
+    <a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a>
+  </p>
 </footer>
 
 </body>
